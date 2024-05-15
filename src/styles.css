@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+
+
+*{
+    --black :   #222222;
+    --white :   #ffffff;
+    --light-brown: #C6BB8C;
+    --brown : #C4A668;
+    --dark-brown : #8B4513;
+    --green: #62733E;
+    font-family: 'Open Sans', sans-serif;
+}
+
