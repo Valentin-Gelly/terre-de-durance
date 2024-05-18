@@ -31,3 +31,38 @@
     margin: 0;
     align-items: center;
 }
+
+#header a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.2em;
+}
+
+.activeHeaderLink{
+    color: var(--light-brown);
+}
+
+
+ul, li{
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  position: relative;
+  padding: 5px;
+  width: fit-content;
+}
+li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transition: width 0.3s ease-in-out;
+}
+li:hover::after {
+  width: 100%;
+}
+

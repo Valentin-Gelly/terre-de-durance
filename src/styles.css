@@ -14,3 +14,11 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+a:hover{
+    color: var(--dark-brown);
+  transition: 0.3s;
+}

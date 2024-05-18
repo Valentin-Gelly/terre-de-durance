@@ -1,0 +1,152 @@
+#footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--light-brown);
+  left: 0;
+  padding-left: 50px;
+}
+
+#containsFooter{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.socialMediaIcons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.socialMediaIcons img {
+  width: 30px;
+  height: 30px;
+}
+
+.socialMediaIcons ul {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+ul, li{
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: fit-content;
+}
+li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--dark-brown);
+  transition: width 0.3s ease-in-out;
+}
+li:hover::after {
+  width: 120%;
+}
+
+#allSocial a{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+hr{
+  width: 100%;
+  border: 0;
+  margin-left: -50px;
+  border-top: 1px solid var(--dark-brown);
+}
+
+#credit{
+  width: 100%;
+  padding-right: 50px;
+}
+
+#contactForm{
+  width: 50%;
+}
+
+#contactForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contactForm input, 
+#contactForm textarea {
+  width: 98%;
+  padding: 1%;
+  border: 1px solid var(--dark-brown);
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: var(--light-beige);
+}
+
+#contactForm textarea {
+  resize: none;
+  height: 125px;
+}
+
+#contactForm button {
+  width: 25%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--dark-brown);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contactForm button:hover {
+  background-color: var(--light-brown);
+}
+
+
+
+#contactForm input::placeholder,
+#contactForm textarea::placeholder {
+  color: var(--medium-brown);
+  opacity: 0.7;
+}
+
+#contactForm button {
+  position: relative; /* Nécessaire pour le positionnement de la flèche */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--dark-brown);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
+#contactForm button:hover {
+  background-color: var(--light-brown);
+  border: solid 1px var(--dark-brown);
+}
+
+#contactForm button:hover::after {
+  right: 10px; /* Déplacez la flèche vers la gauche pour qu'elle apparaisse */
+  opacity: 1; /* Rendez la flèche visible */
+}
+
+.nameSurname{
+  display: flex;
+  gap: 10px;
+}
