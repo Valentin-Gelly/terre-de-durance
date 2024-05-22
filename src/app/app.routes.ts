@@ -6,7 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { HistoryComponent } from './history/history.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import {FooterComponent} from "./footer/footer.component";
-
+import { NgxParallaxModule } from '@yoozly/ngx-parallax';
 export const routes: Routes = [
     { path: '', component: HomePageComponent },
     { path: 'header', component: HeaderComponent },
@@ -16,7 +16,10 @@ export const routes: Routes = [
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
+    imports: [
+      RouterModule.forRoot(routes),
+      NgxParallaxModule
+    ],
     exports: [RouterModule]
 })
 

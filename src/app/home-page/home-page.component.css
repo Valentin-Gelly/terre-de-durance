@@ -1,0 +1,76 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main{
+  margin-top: 10%;
+}
+
+#titleWelcome{
+  position: absolute;
+  z-index: 1;
+}
+
+.home-page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+video {
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.sectionStep {
+  height: 35vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionStep video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  transform: translate(-50%, -50%);
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+h2{
+  color: #333333;
+  font-family: 'Great Vibes', cursive;
+  font-size: 5em;
+  text-align: center;
+  z-index: 3;
+}
+
+#titleWelcome{
+  color: black;
+  position: absolute;
+  z-index: 3; /* Increase the z-index so it's above the filter */
+}
+
+.sectionStep::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5); /* Change this to the color and opacity you want */
+  z-index: 2; /* Make sure this is higher than the video's z-index */
+}
