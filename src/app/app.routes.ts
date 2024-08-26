@@ -8,7 +8,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import {FooterComponent} from "./footer/footer.component";
 import { NgxParallaxModule } from '@yoozly/ngx-parallax';
 export const routes: Routes = [
-    { path: '', component: HomePageComponent },
+  { path: 'homePage', component: HomePageComponent },
+  { path: '', component: HomePageComponent },
     { path: 'header', component: HeaderComponent },
     { path:'footer', component: FooterComponent },
     { path: 'history', component: HistoryComponent },

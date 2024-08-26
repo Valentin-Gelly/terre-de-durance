@@ -5,7 +5,7 @@
 }
 
 main{
-  margin-top: 10%;
+  margin-top: 7%;
 }
 
 #titleWelcome{
@@ -73,4 +73,83 @@ h2{
   height: 100%;
   background: rgba(255, 255, 255, 0.5); /* Change this to the color and opacity you want */
   z-index: 2; /* Make sure this is higher than the video's z-index */
+}
+
+#histoire{
+  background-color: #f5f5f5;
+  height: 50vh;
+}
+
+.halfSection{
+  width: 50%;
+}
+
+
+/* splide nos jus */
+
+
+.splide__slide {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+
+.slide-content {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.slide-content img {
+  width: 100%;
+  height: auto;
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5em;
+  background-color: rgba(0, 0, 0, 0.5); /* Optionnel : pour une meilleure lisibilité */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btn-overlay{
+  position: absolute;
+  display: block;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  color: white;
+  z-index: -1;
+  font-size: 1.5em;
+  background-color: var(--light-brown); /* Optionnel : pour une meilleure lisibilité */
+  padding: 10px;
+  border: solid 1px var(--white);
+  bottom: 0;
+  transition: 0.5s;
+}
+
+.imgAndTest{
+  z-index: 10;
+  transition: 0.5s;
+}
+
+.imgAndTest-active{
+  position: static;
+  transition: 0.5s;
+  transform: translateY(-100px);
+}
+
+.btn-overlay-active{
+  z-index: 0;
+}
+
+.btn-overlay:hover{
+  background-color: var(--white);
+  transition: 0.5s;
 }
