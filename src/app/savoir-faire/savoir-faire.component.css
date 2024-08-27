@@ -35,8 +35,3 @@ h1::before {
 h1::after {
   margin-left: 15px;
 }
-
-.mainContent{
-  width: 75%;
-  margin: 0 auto;
-}
