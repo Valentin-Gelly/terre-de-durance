@@ -10,9 +10,12 @@
       <section class="halfSection">
         <section class="contentHalfSection">
           <h3>Un peu d'histoire ... </h3>
-          <p>Au sein de la famille Durand, l'exploitation agricole a été établie en 1970 et a depuis vu
-            trois générations se succéder. Actuellement, c'est Jean Michel
-            Durand qui est à la tête de l'entreprise Terres de Durance à Cavaillon, fondée en 2012.</p>
+          <p>Au sein de la famille Durand, l'exploitation agricole a été établie en 1970 et a depuis
+            vu trois générations se succéder. Depuis de nombreuses années, la famille à su développer
+            des compétences en arboriculture et les a appliqués dans dans ces terroirs à Cavaillon.
+            Chaque génération a été indispensable dans cette exploitation pour devenir ce qu’elle est
+            aujourd’hui.
+          </p>
           <button class="aboutButton" routerLink="/history" >En savoir plus</button>
         </section>
       </section>
@@ -20,52 +23,40 @@
       <img src="../../assets/paysage_histoire.png" alt="" class="halfSection">
     </section>
     <section class="articleSection" id="savoirFaire">
-      <img src="../../assets/paysage_histoire.png" alt="" class="halfSection">
+      <img src="../../assets/savoirFaire.JPG" alt="" class="halfSection">
       <section class="halfSection">
         <section class="contentHalfSection">
           <h3>Notre savoir faire ... </h3>
-          <p>à compléter </p>
+          <p> Dans un contexte environnemental plus complexe d’année en année,
+            nous avons pu accroître notre domaine de savoir-faire en garantissant au consommateur
+            une agriculture biologique, en soutenant la préservation de nos agents pollinisateurs et en enrichissant notre terroir.
+          </p>
           <button class="aboutButton" routerLink="/savoir-faire" >En savoir plus</button>
         </section>
       </section>
 
     </section>
-    <section id="nosJus">
-      <div class="splide">
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-              <div class="slide-content">
-                <section class="imgAndTest">
-                  <img src="../../assets/mini_bouteille_pommes.jpeg" alt="Image 1">
-                  <div class="text-overlay">Pommes</div>
-                </section>
-                <a class="btn-overlay" (click)="goToJus('Pommes')">En savoir plus </a>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <div class="slide-content">
-                <section class="imgAndTest">
-                  <img src="../../assets/mini_bouteille_poires.jpeg" alt="Image 2">
-                  <div class="text-overlay">Poires</div>
-                </section>
-                <a class="btn-overlay" (click)="goToJus('Poires')" >En savoir plus </a>
 
-              </div>
-            </li>
-            <li class="splide__slide">
-              <div class="slide-content">
-                <section class="imgAndTest">
-                  <img src="../../assets/mini_bouteille_pomme_poire.jpeg" alt="Image 3">
-                  <div class="text-overlay">Pommes-Poires</div>
-                </section>
-                <a class="btn-overlay" (click)="goToJus('Pommes-Poires')" >En savoir plus </a>
-              </div>
-            </li>
-            <!-- Ajoutez autant de slides que nécessaire -->
-          </ul>
-        </div>
+    <section id="nosJus">
+      <h2>Nos Jus De Fruits Bio </h2>
+      <section id="nosJusContent">
+      <div class="slide-content">
+          <img src="../../assets/mini_bouteille_pommes.jpeg" alt="Image 1">
+          <div class="text-overlay" >Pommes</div>
+          <a class="btn-overlay" (click)="goToJus('Pommes')" >En savoir plus </a>
       </div>
+
+      <div class="slide-content">
+          <img src="../../assets/mini_bouteille_pomme_poire.jpeg" alt="Image 3">
+          <div class="text-overlay">Pommes-Poires</div>
+        <a class="btn-overlay" (click)="goToJus('Pommes-Poires')" >En savoir plus </a>
+      </div>
+        <div class="slide-content">
+          <img src="../../assets/mini_bouteille_poires.jpeg" alt="Image 2">
+          <div class="text-overlay" >Poires</div>
+          <a class="btn-overlay" (click)="goToJus('Poires')" >En savoir plus </a>
+        </div>
+      </section>
     </section>
     <section id="fruitEtLegume">
 

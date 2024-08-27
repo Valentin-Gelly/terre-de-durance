@@ -8,6 +8,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { SavoirFaireComponent } from './savoir-faire/savoir-faire.component';
 import {FooterComponent} from "./footer/footer.component";
 import { NgxParallaxModule } from '@yoozly/ngx-parallax';
+import {JusComponent} from "./jus/jus.component";
 export const routes: Routes = [
   { path: 'homePage', component: HomePageComponent },
   { path: '', component: HomePageComponent },
@@ -15,6 +16,7 @@ export const routes: Routes = [
   { path:'footer', component: FooterComponent },
   { path: 'savoir-faire', component: SavoirFaireComponent},
   { path: 'history', component: HistoryComponent },
+  {path : 'jus/**' , component : JusComponent},
   { path: '**', component: PageNotFoundComponent },
 ];
 

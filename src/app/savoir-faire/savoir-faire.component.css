@@ -2,22 +2,19 @@ main{
   margin-top: 7%;
 }
 
+
 h1 {
-  color: #333333;
   font-family: 'Great Vibes', cursive;
   text-align: center;
   z-index: 3;
-}
-
-h1{
   display: flex;
   align-items: center;
   text-align: center;
   font-size: 2.5em;
   font-weight: bold;
   color: #333; /* Couleur du texte */
-  width: 35%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 20px auto 55px auto;
 }
 
 h1::before,
@@ -34,4 +31,42 @@ h1::before {
 
 h1::after {
   margin-left: 15px;
+}
+
+.mainContent{
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.mainContent>section{
+  width: 520px;
+  padding: 20px;
+  height: 500px;
+}
+
+
+.mainContent>section>img{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.mainContent>section>p{
+  text-align: justify;
+}
+
+.terroirSection{
+  margin-top: 35px;
+}
+
+#imageCavaillon img {
+  height: 421px;
+  object-fit: cover;
 }
