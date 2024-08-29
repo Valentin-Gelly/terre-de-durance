@@ -8,6 +8,12 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { SavoirFaireComponent } from './savoir-faire/savoir-faire.component';
 import {FooterComponent} from "./footer/footer.component";
 import { NgxParallaxModule } from '@yoozly/ngx-parallax';
+import { PommeComponent } from './pomme/pomme.component';
+import { PoiresComponent } from './poires/poires.component';
+import { CourgesComponent } from './courges/courges.component';
+import { HomeCourgeComponent } from './home-courge/home-courge.component';
+import { HomePommeComponent } from './home-pomme/home-pomme.component';
+import { HomePoireComponent } from './home-poire/home-poire.component';
 export const routes: Routes = [
   { path: 'homePage', component: HomePageComponent },
   { path: '', component: HomePageComponent },
@@ -16,6 +22,12 @@ export const routes: Routes = [
   { path: 'savoir-faire', component: SavoirFaireComponent},
   { path: 'history', component: HistoryComponent },
   { path: '**', component: PageNotFoundComponent },
+  { path: 'pomme', component: PommeComponent },
+  { path: 'poires', component: PoiresComponent },
+  { path: 'courges', component: CourgesComponent},
+  { path : 'homeCourge', component: HomeCourgeComponent},
+  { path : 'homePomme', component: HomePommeComponent},
+  { path : 'homePoire', component: HomePoireComponent}
 ];
 
 @NgModule({
