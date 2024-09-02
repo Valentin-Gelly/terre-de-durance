@@ -34,32 +34,49 @@
           <button class="aboutButton" routerLink="/savoir-faire" >En savoir plus</button>
         </section>
       </section>
-
     </section>
 
     <section id="nosJus">
       <h2>Nos Jus De Fruits Bio </h2>
       <section id="nosJusContent">
-      <div class="slide-content">
-          <img src="../../assets/mini_bouteille_pommes.jpeg" alt="Image 1">
-          <div class="text-overlay" >Pommes</div>
-          <a class="btn-overlay" (click)="goToJus('Pommes')" >En savoir plus </a>
-      </div>
-
-      <div class="slide-content">
-          <img src="../../assets/mini_bouteille_pomme_poire.jpeg" alt="Image 3">
-          <div class="text-overlay">Pommes-Poires</div>
-        <a class="btn-overlay" (click)="goToJus('Pommes-Poires')" >En savoir plus </a>
-      </div>
         <div class="slide-content">
-          <img src="../../assets/mini_bouteille_poires.jpeg" alt="Image 2">
-          <div class="text-overlay" >Poires</div>
-          <a class="btn-overlay" (click)="goToJus('Poires')" >En savoir plus </a>
+          <section class="imageAndText">
+            <img src="../../assets/mini_bouteille_pommes.jpeg" alt="Image 1">
+            <div class="text-overlay" >Pommes</div>
+          </section>
+            <a class="btn-overlay" (click)="goToJus('Pommes')" >En savoir plus </a>
+        </div>
+
+        <div class="slide-content">
+          <section class="imageAndText">
+            <img src="../../assets/mini_bouteille_pomme_poire.jpeg" alt="Image 3">
+            <div class="text-overlay">Pommes-Poires</div>
+          </section>
+
+            <a class="btn-overlay" (click)="goToJus('Pommes-Poires')" >En savoir plus </a>
+        </div>
+        <div class="slide-content">
+          <section class="imageAndText">
+            <img src="../../assets/mini_bouteille_poires.jpeg" alt="Image 2">
+            <div class="text-overlay" >Poires</div>
+          </section>
+          <a class="btn-overlay" (click)="goToJus('Poires')" >En savoir plus</a>
         </div>
       </section>
     </section>
     <section id="fruitEtLegume">
-
+      <section class="fruitSection" id="pommesBackground">
+        <h3>Pommes</h3>
+        <button class="aboutButton" routerLink="/homePomme">En savoir plus</button>
+      </section>
+      <section class="fruitSection" id="poiresBackground">
+        <h3>Poires</h3>
+        <button class="aboutButton" routerLink="/homePoire">En savoir plus</button>
+      </section>
+      <section class="fruitSection" id="courgesBackground">
+        <h3>Courges</h3>
+        <button class="aboutButton" routerLink="/homeCourge">En savoir plus</button>
+      </section>
     </section>
   </section>
 

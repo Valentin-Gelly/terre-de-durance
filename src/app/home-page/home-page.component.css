@@ -209,3 +209,120 @@ h2{
   color: var(--light-brown);
 }
 
+
+
+
+#nosJusContent {
+  display: flex;
+  gap: 20px;
+}
+
+.slide-content {
+  position: relative;
+  overflow: hidden;
+}
+.imageAndText{
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.slide-content img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.btn-overlay {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-overlay:after {
+  content: "\bb";
+  position: absolute;
+  opacity: 0;
+  top: -1px;
+  right: -20px;
+  transition: 0.5s;
+  font-size: 1.5vw;
+}
+
+.btn-overlay:hover{
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+.btn-overlay:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+
+.slide-content:hover .imageAndText {
+  transform: translateY(-60px);
+}
+
+.slide-content:hover .btn-overlay {
+  opacity: 1;
+}
+
+.slide-content:hover .text-overlay {
+  opacity: 0.8;
+}
+
+#fruitEtLegume{
+  display: flex;
+  width: 100%;
+  height: 500px;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#fruitEtLegume .aboutButton{
+  width: unset;
+  margin: 0 auto;
+}
+
+#pommesBackground,
+#poiresBackground,
+#courgesBackground{
+  width: 33%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 50px;
+}
+
+
+
+#pommesBackground{
+  background-image: url("../../assets/pommes/pommeAboutHomePage.jpeg");
+}
+
+#courgesBackground{
+  background-image: url("../../assets/courges/courgesAboutHomePage.jpg");
+}
+
+.fruitSection h3{
+  color: white;
+  font-size: 3em;
+}
+
+
+
+#poiresBackground{
+  background-image: url("../../assets/poires/poiresBackgroundHomePage.png");
+}
+
+

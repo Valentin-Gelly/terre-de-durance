@@ -23,15 +23,15 @@ export const routes: Routes = [
   { path: 'footer', component: FooterComponent },
   { path: 'savoir-faire', component: SavoirFaireComponent},
   { path: 'history', component: HistoryComponent },
-  {path : 'jus/**' , component : JusComponent},
-  { path: '**', component: PageNotFoundComponent },
-  { path: 'pomme', component: PommeComponent },
-  { path: 'poires', component: PoiresComponent },
+  { path : 'jus/:variete' , component : JusComponent},
+  { path: 'pommes/:variete', component: PommeComponent },
+  { path: 'poires/:variete', component: PoiresComponent },
   { path: 'courges', component: CourgesComponent},
   { path: 'homeCourge', component: HomeCourgeComponent},
   { path: 'homePomme', component: HomePommeComponent},
   { path: 'homePoire', component: HomePoireComponent},
-  { path: 'footer', component: FooterComponent}
+  { path: 'footer', component: FooterComponent},
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
