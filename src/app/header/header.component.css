@@ -13,6 +13,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+  position: sticky;
 }
 #header #logo{
     width: 20%;
@@ -68,3 +69,51 @@ li:hover::after {
   width: 100%;
 }
 
+
+/* Style pour le menu déroulant */
+.deroulant {
+  position: relative;
+}
+
+.sousmenu {
+  display: none; /* Cache le sous-menu par défaut */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--white);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  z-index: 1000;
+  width: fit-content;
+  min-width: 175px;
+  flex-direction: column;
+  align-items: flex-start !important;
+  border-radius: 5px;
+}
+
+.sousmenu li {
+  padding: 8px 16px;
+  white-space: nowrap;
+  width: 50%;
+}
+
+.sousmenu li a {
+  color: var(--black);
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.deroulant:hover .sousmenu {
+  display: block; /* Affiche le sous-menu au survol */
+}
+
+/* Optionnel: Effet de transition pour le menu */
+.sousmenu {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.deroulant:hover .sousmenu {
+  display: block;
+  opacity: 1;
+}

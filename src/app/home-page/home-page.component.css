@@ -221,7 +221,7 @@ h2{
   position: relative;
   overflow: hidden;
 }
-.imageAndText{
+.imageAndText img{
   transition: transform 0.3s ease-in-out;
 }
 
@@ -265,16 +265,12 @@ h2{
 }
 
 
-.slide-content:hover .imageAndText {
+.slide-content:hover .imageAndText img{
   transform: translateY(-60px);
 }
 
 .slide-content:hover .btn-overlay {
   opacity: 1;
-}
-
-.slide-content:hover .text-overlay {
-  opacity: 0.8;
 }
 
 #fruitEtLegume{

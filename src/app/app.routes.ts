@@ -15,6 +15,8 @@ import { CourgesComponent } from './courges/courges.component';
 import { HomeCourgeComponent } from './home-courge/home-courge.component';
 import { HomePommeComponent } from './home-pomme/home-pomme.component';
 import { HomePoireComponent } from './home-poire/home-poire.component';
+import {HomeJusComponent} from "./home-jus/home-jus.component";
+import {HomeFruitLegumeComponent} from "./home-fruit-legume/home-fruit-legume.component";
 
 export const routes: Routes = [
   { path: 'homePage', component: HomePageComponent },
@@ -26,10 +28,12 @@ export const routes: Routes = [
   { path : 'jus/:variete' , component : JusComponent},
   { path: 'pommes/:variete', component: PommeComponent },
   { path: 'poires/:variete', component: PoiresComponent },
+  { path: 'homeFruitLegume', component: HomeFruitLegumeComponent },
   { path: 'courges', component: CourgesComponent},
-  { path: 'homeCourge', component: HomeCourgeComponent},
-  { path: 'homePomme', component: HomePommeComponent},
-  { path: 'homePoire', component: HomePoireComponent},
+  { path: 'homeCourges', component: HomeCourgeComponent},
+  { path: 'homePommes', component: HomePommeComponent},
+  { path: 'homePoires', component: HomePoireComponent},
+  { path: 'homeJus', component: HomeJusComponent},
   { path: 'footer', component: FooterComponent},
   { path: '**', component: PageNotFoundComponent }
 ];

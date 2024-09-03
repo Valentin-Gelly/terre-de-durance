@@ -13,9 +13,12 @@ export class PageNotFoundComponent {
   countdownRedirect: number = 5;
 
   constructor(private router: Router) {}
+
+  timeout: any;
+
   ngOnInit() {
     if (this.countdownRedirect > 0) {
-      setInterval(() => {
+      this.timeout =  setInterval(() => {
         if (this.countdownRedirect === 0) {
           this.countdownRedirect = 0;
           this.router.navigate(['/homePage']);
@@ -24,4 +27,9 @@ export class PageNotFoundComponent {
       }, 1000);
     }
   }
+
+  ngOnDestroy() {
+    clearInterval(this.timeout);
+  }
+
 }

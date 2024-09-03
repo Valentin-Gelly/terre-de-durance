@@ -6,8 +6,22 @@
             <li><a routerLink="/savoir-faire"  routerLinkActive="activeHeaderLink" >Savoir faire</a></li>
         </ul>
         <ul>
-          <li><a routerLink="/homeJus">Nos jus</a></li>
-            <li><a routerLink="/pomme">Fruits et Légumes</a></li>
+            <li class="deroulant">
+              <a routerLink="/homeJus" >Nos jus</a>
+              <ul class="sousmenu">
+                <li><a href="jus/Pommes">Pommes</a></li>
+                <li><a href="jus/Poires">Poires</a></li>
+                <li><a href="jus/Pommes-Poires">Pommes-Poires</a></li>
+              </ul>
+            </li>
+            <li class="deroulant">
+              <a routerLink="/homeFruitLegume">Fruits et Légumes</a>
+              <ul class="sousmenu">
+                <li><a href="/homePommes">Pommes</a></li>
+                <li><a href="/homePoires">Poires</a></li>
+                <li><a href="/homeCourges">Courges</a></li>
+              </ul>
+            </li>
             <li><a>Contact</a></li>
         </ul>
     </section>

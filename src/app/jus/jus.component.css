@@ -1,3 +1,34 @@
 main{
-  margin-top: 15%;
+  margin-top: 8%;
 }
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  text-align: center;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #333; /* Couleur du texte */
+  width: 60%;
+  margin: 20px auto 55px auto;
+}
+
+h1::before,
+h1::after {
+  content: '';
+  flex: 1;
+  border-bottom: 2px solid #333; /* Couleur et épaisseur du trait */
+  margin: 0 15px; /* Espacement entre le texte et les traits */
+}
+
+h1::before {
+  margin-right: 15px;
+}
+
+h1::after {
+  margin-left: 15px;
+}
+
