@@ -1,47 +1,56 @@
 <main>
-  <section class="left">
-    <h1>Pur Jus De {{id}} Bio</h1>
-    <p class="description">
-      {{contentJus[id].description}}
-    </p>
-    <div class="varietes">
-      <ul *ngIf="id==='Pommes-Poires'">
-        <li>Variété de Pommes</li>
-        <ul>
-          <li *ngFor="let varietePommes of contentJus['Pommes-Poires'].variety.pommes; let index = index; let isFirst = first; let isOdd = odd;">
-            {{ varietePommes }}
+  <section id="mainContent">
+    <section class="left">
+      <h1>Pur Jus De {{id}} Bio</h1>
+      <p class="description">
+        {{contentJus[id].description}}
+      </p>
+      <div class="varietes">
+        <ul *ngIf="id==='Pommes-Poires'">
+          <li>Variété de Pommes</li>
+          <ul>
+            <li class="varietePoires" *ngFor="let varietePommes of contentJus['Pommes-Poires'].variety.pommes; let index = index; let isFirst = first; let isOdd = odd;">
+              {{ varietePommes }}
+            </li>
+          </ul>
+          <li>Variété de Poires</li>
+          <ul>
+            <li class="varietePoires" *ngFor="let varietePommes of contentJus['Pommes-Poires'].variety.poires; let index = index; let isFirst = first; let isOdd = odd;">
+              {{ varietePommes }}
+            </li>
+          </ul>
+        </ul>
+        <ul *ngIf="id=='Pommes' || id=='Poires'">
+          <li>Variété de {{id}}</li>
+          <ul>
+            <li class="varietePoires" *ngFor="let variete of contentJus[id].variety; let index = index; let isFirst = first; let isOdd = odd;">
+              {{ variete }}
+            </li>
+          </ul>
+        </ul>
+      </div>
+      <div class="caracteristiques">
+        Caractériques :
+        <ul class="caracteristiqueList">
+          <li *ngFor="let caracteristique of contentJus[id].caracteristiques; let index = index; let isFirst = first; let isOdd = odd;">
+            {{ caracteristique }}
           </li>
         </ul>
-        <li>Variété de Poires</li>
-        <ul>
-          <li *ngFor="let varietePommes of contentJus['Pommes-Poires'].variety.poires; let index = index; let isFirst = first; let isOdd = odd;">
-            {{ varietePommes }}
-          </li>
-        </ul>
-      </ul>
-      <ul *ngIf="id=='Pommes' || id=='Poires'">
-        <li>Variété de {{id}}</li>
-        <ul>
-          <li *ngFor="let variete of contentJus[id].variety; let index = index; let isFirst = first; let isOdd = odd;">
-            {{ variete }}
-          </li>
-        </ul>
-      </ul>
-    </div>
-    <p class="caracteristiques">
-      {{contentJus[id].caracteristiques}}
-    </p>
-    <p class="degustation">
-      {{contentJus[id].degustation}}
-    </p>
-    <p class="terroir">
-      {{contentJus[id].terroir}}
-    </p>
-    <p class="engagementBio">
-      {{contentJus[id].engagementBio}}
-    </p>
+
+      </div>
+      <p class="degustation">
+        {{contentJus[id].degustation}}
+      </p>
+      <p class="terroir">
+        {{contentJus[id].terroir}}
+      </p>
+      <p class="engagementBio">
+        {{contentJus[id].engagementBio}}
+      </p>
+    </section>
+    <section class="right">
+      <img src="../../assets/jus/{{id}}.jpg" alt="">
+    </section>
   </section>
-  <section class="right">
-    <img src="" alt="">
-  </section>
+
 </main>
