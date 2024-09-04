@@ -29,7 +29,7 @@ export const routes: Routes = [
   { path: 'pommes/:variete', component: PommeComponent },
   { path: 'poires/:variete', component: PoiresComponent },
   { path: 'homeFruitLegume', component: HomeFruitLegumeComponent },
-  { path: 'courges', component: CourgesComponent},
+  { path: 'courges/:variete', component: CourgesComponent},
   { path: 'homeCourges', component: HomeCourgeComponent},
   { path: 'homePommes', component: HomePommeComponent},
   { path: 'homePoires', component: HomePoireComponent},

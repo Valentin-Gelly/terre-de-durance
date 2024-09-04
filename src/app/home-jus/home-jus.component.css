@@ -166,6 +166,7 @@ h1::after {
   text-decoration: none;
   opacity: 0;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .btn-overlay:after {
