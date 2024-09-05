@@ -59,7 +59,9 @@ export class JusComponent {
     });
 
     this.image = this.contentJus[this.id].images[0];
+  }
 
-
+  ngAfterViewInit(): void {
+    window.scrollTo(0, 0);
   }
 }

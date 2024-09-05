@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './history.component.css'
 })
 export class HistoryComponent {
+  ngAfterViewInit(): void {
+    window.scrollTo(0, 0);
 
+  }
 }

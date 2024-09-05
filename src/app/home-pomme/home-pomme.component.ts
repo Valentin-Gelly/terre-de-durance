@@ -12,4 +12,10 @@ import {RouterLink} from "@angular/router";
 })
 export class HomePommeComponent {
 
+
+  ngAfterViewInit(): void {
+    window.scrollTo(0, 0);
+
+  }
+
 }

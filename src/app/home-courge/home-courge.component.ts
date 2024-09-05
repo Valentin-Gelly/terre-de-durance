@@ -11,5 +11,8 @@ import {RouterLink} from "@angular/router";
   styleUrl: './home-courge.component.css'
 })
 export class HomeCourgeComponent {
+  ngAfterViewInit(): void {
+    window.scrollTo(0, 0);
 
+  }
 }

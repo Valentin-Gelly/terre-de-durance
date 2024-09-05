@@ -11,5 +11,8 @@ import {RouterLink} from "@angular/router";
   styleUrl: './home-poire.component.css'
 })
 export class HomePoireComponent {
+  ngAfterViewInit(): void {
+    window.scrollTo(0, 0);
 
+  }
 }

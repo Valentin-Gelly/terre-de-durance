@@ -28,6 +28,10 @@ export class PageNotFoundComponent {
     }
   }
 
+  ngAfterViewInit(): void {
+    window.scrollTo(0, 0);
+  }
+
   ngOnDestroy() {
     clearInterval(this.timeout);
   }

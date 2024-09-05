@@ -9,4 +9,7 @@ import { Component } from '@angular/core';
 })
 export class SavoirFaireComponent {
 
+  ngAfterViewInit(): void {
+    window.scrollTo(0, 0);
+  }
 }

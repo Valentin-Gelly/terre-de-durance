@@ -31,8 +31,11 @@ export class PoiresComponent {
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
       this.id = params.get('variete');
-      console.log(this.id);
     });
+  }
+
+  ngAfterViewInit(): void {
+    window.scrollTo(0, 0);
   }
 
 }

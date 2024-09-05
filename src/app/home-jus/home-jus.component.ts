@@ -17,4 +17,9 @@ export class HomeJusComponent {
     this.router.navigate(['/jus', typeJus]);
   }
 
+  ngAfterViewInit(): void {
+    window.scrollTo(0, 0);
+
+  }
+
 }

@@ -41,10 +41,12 @@ export class HomePageComponent {
         splide__slide[i].getElementsByClassName('btn-overlay')[0].classList.remove('btn-overlay-active');
       })
     }
+    window.scrollTo(0, 0);
 
   }
   goToJus(typeJus:string){
     this.appService.typeJus = typeJus;
     this.router.navigate(['/jus', typeJus]);
   }
+
 }

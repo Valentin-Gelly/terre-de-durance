@@ -11,5 +11,8 @@ import {RouterLink} from "@angular/router";
   styleUrl: './home-fruit-legume.component.css'
 })
 export class HomeFruitLegumeComponent {
+  ngAfterViewInit(): void {
+    window.scrollTo(0, 0);
 
+  }
 }
