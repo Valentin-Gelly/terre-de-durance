@@ -61,7 +61,7 @@ h2{
 #titleWelcome{
   color: black;
   position: absolute;
-  z-index: 3; /* Increase the z-index so it's above the filter */
+  z-index: 3;
 }
 
 .sectionStep::before {
@@ -71,8 +71,8 @@ h2{
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.5); /* Change this to the color and opacity you want */
-  z-index: 2; /* Make sure this is higher than the video's z-index */
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 2;
 }
 
 
@@ -161,10 +161,6 @@ h2{
 }
 
 .btn-overlay {
-  position: absolute;
-  bottom: 10px; /* Ajustez cette valeur selon vos besoins */
-  left: 50%;
-  transform: translateX(-50%);
   color: white;
   padding: 10px;
   border-radius: 5px;
