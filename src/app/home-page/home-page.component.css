@@ -176,7 +176,6 @@ h2{
   transition:0.3s ease;
 }
 
-
 .slide-content{
   width: 33%;
 }
@@ -192,9 +191,6 @@ h2{
   text-align: center;
 
 }
-
-
-
 
 .aboutButton{
   color: white;
@@ -313,7 +309,6 @@ h2{
   display: none;
 }
 
-/* ------- Ajout de la responsivité ------- */
 @media screen and (max-width: 1200px) {
 
   #grandePage {
