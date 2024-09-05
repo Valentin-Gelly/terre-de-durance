@@ -389,44 +389,18 @@ h2{
     flex-wrap: unset;
     flex-direction: column;
   }
-
   .slide-content {
     width: 80%;
   }
-
-
 }
-
-
 @media screen and (max-width: 480px) {
-
   h2 {
     font-size: 2em;
   }
-
   .halfSection h3 {
     font-size: 2em;
   }
-
-  .aboutButton {
-    width: 70%;
-    font-size: 1em;
-    margin-left: 15%;
-  }
-
-  #nosJusContent {
-    gap: 10px;
-  }
-
-  .slide-content img {
-    width: 100%;
-  }
-
-  #fruitEtLegume {
-    flex-direction: column;
-  }
-
   #titleWelcome{
-    top: 125px;
+    font-size: 3em;
   }
 }
