@@ -304,26 +304,9 @@ h2{
   text-align: center;
   gap: 50px;
 }
-
-
-
-#pommesBackground{
-  background-image: url("../../assets/pommes/pommeAboutHomePage.jpeg");
-}
-
-#courgesBackground{
-  background-image: url("../../assets/courges/courgesAboutHomePage.jpg");
-}
-
 .fruitSection h3{
   color: white;
   font-size: 3em;
-}
-
-
-
-#poiresBackground{
-  background-image: url("../../assets/poires/poiresBackgroundHomePage.jpg");
 }
 
 #responsive780{
