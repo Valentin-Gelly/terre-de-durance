@@ -1,5 +1,5 @@
 main{
-  margin-top: 8%;
+  margin-top: 15vh;
 }
 
 h1 {
@@ -39,7 +39,7 @@ h1::after {
   width: 85%;
 }
 
-#nosJusContent {
+#nosJusContent, #nosJusContent2{
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -112,9 +112,6 @@ h1::after {
 
 }
 
-
-
-
 .aboutButton{
   color: white;
   font-size: 1.5em;
@@ -132,9 +129,6 @@ h1::after {
   border: solid 1px var(--light-brown);
   color: var(--light-brown);
 }
-
-
-
 
 #nosJusContent {
   display: flex;
@@ -196,4 +190,30 @@ h1::after {
 
 .slide-content:hover .btn-overlay {
   opacity: 1;
+}
+
+#nosJusContent2{
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+
+  #nosJusContent{
+    display: none;
+  }
+
+  #nosJusContent2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #nosJusContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slide-content {
+    width: 100%;
+  }
 }

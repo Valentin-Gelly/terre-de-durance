@@ -1,4 +1,4 @@
-#header{
+#headerGrandePage{
     display: flex;
     position: fixed;
     top: 0;
@@ -13,9 +13,9 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-  position: sticky;
+    position: sticky;
 }
-#header #logo{
+#headerGrandePage #logo{
     width: 20%;
     position: fixed;
     transform: translate(-50%, 0%);
@@ -24,7 +24,7 @@
     margin-top: 1.5%;
 }
 
-#header ul{
+#headerGrandePage ul{
     display: flex;
     justify-content: space-around;
     width: 40%;
@@ -34,7 +34,7 @@
     align-items: center;
 }
 
-#header a {
+#headerGrandePage a {
     text-decoration: none;
     color: var(--black);
     font-size: 1.2em;
@@ -116,4 +116,155 @@ li:hover::after {
 .deroulant:hover .sousmenu {
   display: block;
   opacity: 1;
+}
+
+#headerPetitePage{
+  display: none;
+}
+
+
+#Menu2{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: sticky;
+}
+#headerPetitePage #logo{
+  width: 20%;
+  position: fixed;
+  transform: translate(-50%, 0%);
+  margin-left: 50%;
+  margin-right: 50%;
+  margin-top: 1.5%;
+}
+
+#headerPetitePage ul{
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+#headerPetitePage a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 1.2em;
+}
+
+/* Style pour le bouton hamburger */
+.hamburger-btn {
+  display: none; /* Par défaut caché sur grands écrans */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+  z-index: 3000; /* Assurez-vous qu'il est au-dessus des autres éléments */
+  margin: 15px;
+}
+
+.hamburger-btn span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--black);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Transformations pour le bouton hamburger lors de l'ouverture */
+.hamburger-btn.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-btn.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-btn.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Masquer le menu par défaut */
+#Menu2 {
+  display: none;
+  background-color: var(--white);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  z-index: 2500;
+  flex-direction: column;
+}
+
+#Menu2 ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  width: 75%;
+}
+
+#Menu2 li {
+  margin: 20px 0;
+}
+
+#Menu2 a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 1.5em;
+}
+
+/* Affichage du menu lors de l'activation */
+#Menu2.menu-visible {
+  display: flex;
+}
+
+/* Pour les petits écrans */
+@media (max-width: 768px) {
+
+  .logo2{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #headerPetitePage {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #headerGrandePage {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: flex; /* Afficher le bouton hamburger sur mobile */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Masquer le menu de base */
+  #Menu2 {
+    display: none;
+  }
+
+  /* Afficher le menu quand actif */
+  #Menu2.menu-visible {
+    display: flex;
+  }
+
+  #Menu2 ul{
+    display: flex;
+    flex-direction: column;
+  }
+
+
 }

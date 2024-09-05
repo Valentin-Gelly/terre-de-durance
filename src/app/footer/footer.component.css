@@ -159,3 +159,28 @@ hr{
 #logoFooter{
   width: 22%;
 }
+
+@media screen and (max-width: 1200px) {
+  #containsFooter{
+    flex-direction: column;
+    padding-left: 25px;
+  }
+  #contactForm{
+    width: 80%;
+    padding-bottom: 25px;
+  }
+
+  iframe {
+    width: 85%;
+  }
+
+  #contactForm button {
+    width: 50%;
+  }
+
+  #logoFooter{
+    width: 50%;
+  }
+
+}
+

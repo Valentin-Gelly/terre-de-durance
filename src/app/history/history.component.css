@@ -1,5 +1,5 @@
 main{
-  margin-top: 8%;
+  margin-top: 20vh;
 }
 
 h1 {
@@ -16,7 +16,6 @@ h1{
   font-size: 2.5em;
   font-weight: bold;
   color: #333; /* Couleur du texte */
-  width: 35%;
   margin: 0 auto;
 }
 
@@ -39,4 +38,31 @@ h1::after {
 .mainContent{
   width: 75%;
   margin: 0 auto;
+}
+
+@media (max-width:1200px) {
+  main{
+    margin-top: 15vh;
+  }
+  h1{
+    font-size: 2em;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  main{
+    margin-top: 6vh;
+  }
+
+  h1{
+    font-size: 3em;
+    width: 100%;
+
+  }
+
+  p{
+    font-size: 1.5em;
+  }
 }

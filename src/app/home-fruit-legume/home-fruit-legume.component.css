@@ -1,5 +1,5 @@
 main{
-  margin-top: 8%;
+  margin-top: 15vh;
 }
 
 h1 {
@@ -194,4 +194,54 @@ h1::after {
 
 .slide-content:hover .btn-overlay {
   opacity: 1;
+}
+#responsive780{
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+  #grandePage{
+    display: none;
+  }
+
+  #responsive780{
+    display: block;
+  }
+
+  .nosJusContent {
+    width: 100%;
+  }
+
+  .slide-content{
+    width: 100%;
+  }
+
+  .slide-content img{
+    width: 100%;
+    height: 100% !important;
+    object-fit: cover;
+  }
+
+  .imgAndTest{
+    text-align: center;
+  }
+
+  .aboutButton{
+    color: white;
+    font-size: 1.5em;
+    background-color: var(--light-brown);
+    padding: 10px;
+    border: solid 1px var(--white);
+    bottom: 0;
+    margin-left: 25%;
+    width: 25%;
+    transition:0.3s ease;
+  }
+
+  .aboutButton:hover{
+    background-color: var(--white);
+    border: solid 1px var(--light-brown);
+    color: var(--light-brown);
+  }
 }

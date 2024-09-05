@@ -39,29 +39,54 @@
     <section id="nosJus">
       <h2>Nos Jus De Fruits Bio </h2>
       <section id="nosJusContent">
-        <div class="slide-content">
-          <section class="imageAndText">
-            <img src="../../assets/jus/mini_bouteille_pommes.jpeg" alt="Image 1">
-            <div class="text-overlay" >Pommes</div>
-          </section>
-            <a class="btn-overlay" (click)="goToJus('Pommes')" >En savoir plus </a>
-        </div>
+        <span id="grandePage">
+          <div class="slide-content">
+            <section class="imageAndText">
+              <img src="../../assets/jus/mini_bouteille_pommes.jpeg" alt="Image 1">
+              <div class="text-overlay" >Pommes</div>
+            </section>
+              <a class="btn-overlay" (click)="goToJus('Pommes')" >En savoir plus </a>
+          </div>
+          <div class="slide-content">
+            <section class="imageAndText">
+              <img src="../../assets/jus/mini_bouteille_pomme_poire.jpeg" alt="Image 3">
+              <div class="text-overlay">Pommes-Poires</div>
+            </section>
+              <a class="btn-overlay" (click)="goToJus('Pommes-Poires')" >En savoir plus </a>
+          </div>
+          <div class="slide-content">
+            <section class="imageAndText">
+              <img src="../../assets/jus/mini_bouteille_poires.jpeg" alt="Image 2">
+              <div class="text-overlay" >Poires</div>
+            </section>
+            <a class="btn-overlay" (click)="goToJus('Poires')" >En savoir plus</a>
+          </div>
+        </span>
+        <span id="responsive780">
+          <a class="slide-content" (click)="goToJus('Pommes')">
+            <section class="imageAndText">
+              <img src="../../assets/jus/mini_bouteille_pommes.jpeg" alt="Image 1">
+              <div class="text-overlay" >Pommes</div>
+            </section>
+              <a class="btn-overlay"  >En savoir plus </a>
+          </a>
 
-        <div class="slide-content">
-          <section class="imageAndText">
-            <img src="../../assets/jus/mini_bouteille_pomme_poire.jpeg" alt="Image 3">
-            <div class="text-overlay">Pommes-Poires</div>
-          </section>
+          <a class="slide-content" (click)="goToJus('Pommes-Poires')">
+            <section class="imageAndText">
+              <img src="../../assets/jus/mini_bouteille_pomme_poire.jpeg" alt="Image 3">
+              <div class="text-overlay">Pommes-Poires</div>
+            </section>
 
-            <a class="btn-overlay" (click)="goToJus('Pommes-Poires')" >En savoir plus </a>
-        </div>
-        <div class="slide-content">
-          <section class="imageAndText">
-            <img src="../../assets/jus/mini_bouteille_poires.jpeg" alt="Image 2">
-            <div class="text-overlay" >Poires</div>
-          </section>
-          <a class="btn-overlay" (click)="goToJus('Poires')" >En savoir plus</a>
-        </div>
+              <a class="btn-overlay"  >En savoir plus </a>
+          </a>
+          <a class="slide-content" (click)="goToJus('Poires')">
+            <section class="imageAndText">
+              <img src="../../assets/jus/mini_bouteille_poires.jpeg" alt="Image 2">
+              <div class="text-overlay" >Poires</div>
+            </section>
+            <a class="btn-overlay"  >En savoir plus</a>
+          </a>
+        </span>
       </section>
     </section>
     <section id="fruitEtLegume">

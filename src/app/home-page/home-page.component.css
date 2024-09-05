@@ -121,7 +121,7 @@ h2{
   width: 85%;
 }
 
-#nosJusContent {
+#grandePage, #responsive780 {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -217,7 +217,7 @@ h2{
 
 
 
-#nosJusContent {
+#grandePage, #responsive780 {
   display: flex;
   gap: 20px;
 }
@@ -326,4 +326,107 @@ h2{
   background-image: url("../../assets/poires/poiresBackgroundHomePage.jpg");
 }
 
+#responsive780{
+  display: none;
+}
 
+/* ------- Ajout de la responsivité ------- */
+@media screen and (max-width: 1200px) {
+
+  #grandePage {
+    display: none;
+  }
+
+  #responsive780 {
+    display: flex !important;
+    flex-wrap: wrap;
+  }
+
+  .articleSection {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .halfSection {
+    width: 100%;
+  }
+
+  .slide-content {
+    width: 45%;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 3em;
+  }
+
+  .halfSection h3 {
+    font-size: 2em;
+  }
+
+  .aboutButton {
+    width: 50%;
+    font-size: 1.2em;
+    margin-left: 25%;
+  }
+
+  #fruitEtLegume {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #pommesBackground,
+  #poiresBackground,
+  #courgesBackground {
+    width: 100%;
+    height: 300px;
+  }
+
+  #responsive780 {
+    display: flex !important ;
+    flex-wrap: unset;
+    flex-direction: column;
+  }
+
+  .slide-content {
+    width: 80%;
+  }
+
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+  h2 {
+    font-size: 2em;
+  }
+
+  .halfSection h3 {
+    font-size: 2em;
+  }
+
+  .aboutButton {
+    width: 70%;
+    font-size: 1em;
+    margin-left: 15%;
+  }
+
+  #nosJusContent {
+    gap: 10px;
+  }
+
+  .slide-content img {
+    width: 100%;
+  }
+
+  #fruitEtLegume {
+    flex-direction: column;
+  }
+
+  #titleWelcome{
+    top: 125px;
+  }
+}

@@ -1,4 +1,4 @@
-<div id="header">
+<div id="headerGrandePage">
     <section id="Menu">
         <ul>
             <li><a routerLink="/homePage"  routerLinkActive="activeHeaderLink">Accueil</a></li>
@@ -26,4 +26,26 @@
         </ul>
     </section>
     <img id="logo" src="../../assets/logo-terre-de-durance.png" alt="">
+</div>
+
+<div id="headerPetitePage">
+  <!-- Bouton hamburger -->
+  <img class="logo2" src="../../assets/logo-terre-de-durance.png" alt="">
+
+  <div class="hamburger-btn" id="hamburger-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <section id="Menu2" class="menu-hidden">
+    <ul>
+      <li><a routerLink="/homePage" routerLinkActive="activeHeaderLink">Accueil</a></li>
+      <li><a routerLink="history" routerLinkActive="activeHeaderLink">Histoire</a></li>
+      <li><a routerLink="/savoir-faire" routerLinkActive="activeHeaderLink">Savoir faire</a></li>
+      <li class="deroulant"><a routerLink="/homeJus">Nos jus</a></li>
+      <li class="deroulant"><a routerLink="/homeFruitLegume">Fruits et Légumes</a></li>
+      <li><a>Contact</a></li>
+    </ul>
+  </section>
 </div>
