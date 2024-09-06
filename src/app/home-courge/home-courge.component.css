@@ -8,11 +8,10 @@ h1 {
   z-index: 3;
   display: flex;
   align-items: center;
-  text-align: center;
   font-size: 2.5em;
   font-weight: bold;
   color: #333; /* Couleur du texte */
-  width: 60%;
+  width: 45%;
   margin: 20px auto 55px auto;
 }
 
@@ -187,7 +186,6 @@ h1::after {
   right: 10px;
 }
 
-
 .slide-content:hover .imageAndText img{
   transform: translateY(-60px);
 }
@@ -195,3 +193,36 @@ h1::after {
 .slide-content:hover .btn-overlay {
   opacity: 1;
 }
+
+#petitePage{
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+  #petitePage{
+    display: flex;
+  }
+
+  #grandePage{
+    display: none;
+  }
+
+  .nosJusContent {
+    width: 55%;
+  }
+
+  .slide-content {
+    width: 100%;
+  }
+
+  .slide-content img {
+    width: 100%;
+  }
+
+  h1{
+    width: 80%;
+  }
+
+}
+

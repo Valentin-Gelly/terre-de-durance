@@ -76,3 +76,30 @@ li {
   padding-right: 12px;
 }
 
+@media screen and (max-width: 1200px){
+  #mainContent{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 780px){
+  #mainContent{
+    flex-direction: column;
+  }
+
+  #mainContent .left{
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  #mainContent .right{
+    margin: 10px auto;
+  }
+}
+
+@media screen and (max-width: 480px){
+  #mainContent .left{
+    width: 96%;
+    padding: 2%;
+  }
+}

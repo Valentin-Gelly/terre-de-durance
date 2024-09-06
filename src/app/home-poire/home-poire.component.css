@@ -38,7 +38,7 @@ h1::after {
   width: 85%;
 }
 
-#nosJusContent {
+.nosJusContent {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -76,7 +76,7 @@ h1::after {
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   text-align: center;
-  width: 100%;
+  width: 45%;
 }
 
 .btn-overlay {
@@ -134,7 +134,7 @@ h1::after {
 
 
 
-#nosJusContent {
+.nosJusContent {
   display: flex;
   gap: 20px;
 }
@@ -193,4 +193,34 @@ h1::after {
 
 .slide-content:hover .btn-overlay {
   opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+
+  #petitePage{
+    display: flex;
+    padding: 0 20px;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  #grandePage{
+    display: none;
+  }
+
+  .slide-content {
+    width: 100%;
+  }
+
+  .slide-content img {
+    width: 100%;
+  }
+
+  h1{
+    width: 80%;
+  }
+
+  .nosJusContent {
+    width: 40%;
+  }
 }

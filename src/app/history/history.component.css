@@ -39,6 +39,7 @@ h1::after {
 .mainContent{
   width: 75%;
   margin: 0 auto;
+  font-size: 1.2em;
 }
 
 @media (max-width:1200px) {
@@ -63,7 +64,4 @@ h1::after {
 
   }
 
-  p{
-    font-size: 1.5em;
-  }
 }

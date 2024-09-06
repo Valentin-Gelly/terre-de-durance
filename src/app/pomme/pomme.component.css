@@ -1,5 +1,5 @@
 main  {
-  margin-top: 7%;
+  margin-top: 15vh;
   height: 50vh;
   display: flex;
 }
@@ -25,4 +25,39 @@ p{
   text-align: justify;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media screen and (max-width: 1200px) {
+
+  main{
+    height: 65vh;
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    height: 100%;
+    width: 65%;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  img {
+    width: 120%;
+  }
+
+  .mainContent {
+    width: 100%;
+  }
+
+  p {
+    width: 100%;
+  }
+
+  .imgOne{
+    display: none;
+  }
 }

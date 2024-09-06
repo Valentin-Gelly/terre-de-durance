@@ -216,6 +216,92 @@ h2{
 
 .slide-content {
   position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.slide-content img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  width: 45%;
+}
+
+.btn-overlay {
+  position: absolute;
+  bottom: 10px; /* Ajustez cette valeur selon vos besoins */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.1em;
+  background-color: var(--light-brown);
+  border: solid 1px var(--white);
+  transition:0.3s ease;
+  width: 61%;
+}
+
+
+.slide-content{
+  width: 28%;
+  height: 500px;
+}
+
+.slide-content img{
+  width: 80%;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+.imgAndTest{
+  text-align: center;
+
+}
+
+.aboutButton{
+  color: white;
+  font-size: 1.5em;
+  background-color: var(--light-brown);
+  padding: 10px;
+  border: solid 1px var(--white);
+  bottom: 0;
+  margin-left: 25%;
+  width: 25%;
+  transition:0.3s ease;
+}
+
+.aboutButton:hover{
+  background-color: var(--white);
+  border: solid 1px var(--light-brown);
+  color: var(--light-brown);
+}
+
+
+
+
+#nosJusContent {
+  display: flex;
+  gap: 20px;
+}
+
+.slide-content {
+  position: relative;
   overflow: hidden;
 }
 .imageAndText img{
@@ -239,6 +325,7 @@ h2{
   text-decoration: none;
   opacity: 0;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .btn-overlay:after {
