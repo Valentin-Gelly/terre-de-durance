@@ -1,0 +1,74 @@
+
+@media screen and (max-width: 1200px) {
+
+  #grandePage {
+    display: none;
+  }
+
+  #responsive780 {
+    display: flex !important;
+    flex-wrap: wrap;
+  }
+
+  .articleSection {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .halfSection {
+    width: 100%;
+  }
+
+  .slide-content {
+    width: 45%;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 3em;
+  }
+
+  .halfSection h3 {
+    font-size: 2em;
+  }
+
+  .aboutButton {
+    width: 50%;
+    font-size: 1.2em;
+    margin-left: 25%;
+  }
+
+  #fruitEtLegume {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #pommesBackground,
+  #poiresBackground,
+  #courgesBackground {
+    width: 100%;
+    height: 300px;
+  }
+
+  #responsive780 {
+    display: flex !important ;
+    flex-wrap: unset;
+    flex-direction: column;
+  }
+  .slide-content {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 2em;
+  }
+  .halfSection h3 {
+    font-size: 2em;
+  }
+  #titleWelcome{
+    font-size: 3em;
+  }
+}

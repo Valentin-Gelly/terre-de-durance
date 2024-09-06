@@ -17,7 +17,7 @@ declare var Splide: any;
     ParallaxStandaloneDirective,
     RouterLink
   ],
-  styleUrl: './home-page.component.css'
+  styleUrls: ['./home-page.component.css', './home-page-2.css']
 })
 export class HomePageComponent {
   constructor(private router: Router, private appService: AppServices) { }
