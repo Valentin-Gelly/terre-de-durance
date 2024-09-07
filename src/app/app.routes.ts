@@ -17,6 +17,7 @@ import { HomePommeComponent } from './home-pomme/home-pomme.component';
 import { HomePoireComponent } from './home-poire/home-poire.component';
 import {HomeJusComponent} from "./home-jus/home-jus.component";
 import {HomeFruitLegumeComponent} from "./home-fruit-legume/home-fruit-legume.component";
+import {ContactPageComponent} from "./contact-page/contact-page.component";
 
 export const routes: Routes = [
   { path: 'homePage', component: HomePageComponent },
@@ -35,7 +36,8 @@ export const routes: Routes = [
   { path: 'homePoires', component: HomePoireComponent},
   { path: 'homeJus', component: HomeJusComponent},
   { path: 'footer', component: FooterComponent},
-  { path: '**', component: PageNotFoundComponent }
+  {path: 'contactPage', component:ContactPageComponent},
+  { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({
