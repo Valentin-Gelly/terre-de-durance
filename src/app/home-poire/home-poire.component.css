@@ -195,6 +195,10 @@ h1::after {
   opacity: 1;
 }
 
+#petitePage{
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
 
   #petitePage{
