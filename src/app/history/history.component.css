@@ -1,5 +1,6 @@
 main{
   margin-top: 20vh;
+  margin-bottom: 15vh;
 }
 
 h1 {
@@ -38,8 +39,8 @@ h1::after {
 
 .mainContent{
   width: 75%;
-  margin: 0 auto;
   font-size: 1.2em;
+  margin: 0 auto;
 }
 
 @media (max-width:1200px) {
