@@ -38,15 +38,7 @@ h1::after {
   width: 85%;
 }
 
-#nosJusContent {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  gap: 20px;
-  margin: 25px auto 0 auto;
-  width: 55%;
-}
+
 
 #nosJus h2{
   font-size: 3em;
